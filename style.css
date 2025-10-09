@@ -1,0 +1,98 @@
+/* ===========================
+   🌠 Astronomy Theme Stylesheet
+   Author: Xuan Truong
+   =========================== */
+
+/* Toàn bộ trang web */
+body {
+    font-family: "Poppins", "Trebuchet MS", sans-serif;
+    font-size: 16px;
+    background-color: #0b0c1a; /* Màu đen xanh kiểu vũ trụ */
+    color: #e0e6ff; /* Chữ sáng dễ đọc trên nền tối */
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #1a1c33, #2b3561);
+    color: #f4f6ff;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 2px solid #3b4cca;
+}
+
+/* Thanh điều hướng */
+nav {
+    background-color: #11142d;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Các liên kết trong nav */
+nav a {
+    color: #d7dcff;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffc857; /* hiệu ứng hover vàng nhẹ như ánh sao */
+}
+
+/* Nội dung chính */
+main {
+    background-color: #141832;
+    font-size: 17px;
+    padding: 20px;
+    min-height: 400px;
+}
+
+/* Footer */
+footer {
+    background-color: #0e1023;
+    color: #b9bfff;
+    text-align: center;
+    padding: 15px;
+    border-top: 2px solid #3b4cca;
+}
+
+/* Danh sách (li) */
+li {
+    display: inline-block;
+    width: 120px;
+}
+
+/* Tiêu đề chính */
+h1 {
+    text-align: center;
+    font-family: "Orbitron", "Segoe UI", sans-serif;
+    color: #9bb1ff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px #3b4cca;
+}
+
+/* Đoạn văn */
+p {
+    line-height: 1.8;
+}
+
+/* Bonus - hình ảnh */
+img {
+    max-width: 100%;
+    border-radius: 10px;
+    display: block;
+    margin: 15px auto;
+}
+
+/* Bonus - link trong nội dung */
+a {
+    color: #a2b6ff;
+}
+
+a:hover {
+    color: #ffc857;
+}
