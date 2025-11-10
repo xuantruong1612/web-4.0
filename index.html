@@ -1,36 +1,52 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Khám Phá Vũ Trụ</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Trang chủ — My Accessible Site</title>
+<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <header>
-    <h1>Khám Phá Vũ Trụ</h1>
-  </header>
+<a class="skip-link" href="#main">Bỏ qua tới nội dung chính</a>
 
-  <nav>
-    <ul>
-      <li><a href="index.html">Trang chủ</a></li>
-      <li><a href="planets.html">Hành tinh</a></li>
-      <li><a href="stars.html">Các vì sao</a></li>
-    </ul>
-  </nav>
 
-  <main>
-    <h2>Chào mừng bạn đến với không gian bao la!</h2>
-    <p>
-      Thiên văn học là hành trình khám phá những bí ẩn của vũ trụ. 
-      Từ những hành tinh gần gũi trong hệ Mặt Trời cho đến những thiên hà xa xôi, 
-      mỗi khám phá đều mở ra cánh cửa mới về nguồn gốc của chính chúng ta.
-    </p>
-    <img src="https://media.vov.vn/sites/default/files/styles/large/public/2021-05/10.jpeg.jpg" alt="Trái Đất nhìn từ vũ trụ">
-  </main>
+<header class="site-header">
+<div class="brand">
+<a href="index.html">MySite</a>
+</div>
+<nav class="main-nav" aria-label="Primary">
+<ul>
+<li><a href="index.html">Trang chủ</a></li>
+<li><a href="gallery.html">Thư viện</a></li>
+<li><a href="about.html">Giới thiệu</a></li>
+</ul>
+</nav>
+</header>
 
-  <footer>
-    <p>© 2025 Khám Phá Vũ Trụ | Thiết kế bởi Xuan Truong</p>
-  </footer>
+
+<main id="main">
+<section class="hero">
+<h1>Chào mừng tới trang mẫu truy cập</h1>
+<p>Đây là ví dụ minh họa cho các kỹ thuật CSS: focus skip link, flex, grid, box model, hover, nth-child.</p>
+<img src="images/hero.jpg" alt="Ảnh minh họa trang chủ" class="hero-img">
+</section>
+
+
+<section class="features grid-two">
+<article>
+<h2>Tính năng 1</h2>
+<p>Mô tả ngắn.</p>
+</article>
+<article>
+<h2>Tính năng 2</h2>
+<p>Mô tả ngắn.</p>
+</article>
+</section>
+</main>
+
+
+<footer class="site-footer">
+<p>&copy; 2025 MySite — Thiết kế truy cập</p>
+</footer>
 </body>
 </html>
