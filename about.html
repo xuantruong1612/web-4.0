@@ -1,47 +1,42 @@
-<!doctype html>
-<html lang="vi">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Giới thiệu — My Accessible Site</title>
-<link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Photography Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<a class="skip-link" href="#main">Bỏ qua tới nội dung chính</a>
+    <a href="#main" class="skip-link">Skip to Main Content</a>
+    
+    <header>
+        <h1>Photography Portfolio</h1>
+    </header>
 
+    <nav>
+        <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+        </ul>
+    </nav>
 
-<header class="site-header">
-<div class="brand"><a href="index.html">MySite</a></div>
-<nav class="main-nav" aria-label="Primary">
-<ul>
-<li><a href="index.html">Trang chủ</a></li>
-<li><a href="gallery.html">Thư viện</a></li>
-<li><a href="about.html">Giới thiệu</a></li>
-</ul>
-</nav>
-</header>
+    <main id="main">
+        <section class="about-content">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>I am a passionate photographer dedicated to capturing the beauty of the world around us. With over 10 years of experience, I specialize in landscape, portrait, and wildlife photography.</p>
+                <p>My work has been featured in various publications and exhibitions worldwide. I believe that every photograph tells a unique story and evokes emotions that words cannot express.</p>
+            </div>
+            <div class="about-image">
+                <img src="https://picsum.photos/500/400?random=10" alt="Professional photographer with camera equipment">
+            </div>
+        </section>
+    </main>
 
-
-<main id="main">
-<h1>Về dự án</h1>
-<p>Thông tin về trang và các mục tiêu accessibility.</p>
-<section class="team flex-row">
-<div class="member">
-<img src="images/person1.jpg" alt="Ảnh thành viên 1">
-<h3>Người A</h3>
-<p>Mô tả ngắn.</p>
-</div>
-<div class="member">
-<img src="images/person2.jpg" alt="Ảnh thành viên 2">
-<h3>Người B</h3>
-<p>Mô tả ngắn.</p>
-</div>
-</section>
-</main>
-
-
-<footer class="site-footer">
-<p>&copy; 2025 MySite</p>
-</footer>
+    <footer>
+        <p>&copy; 2025 Photography Portfolio. All rights reserved.</p>
+    </footer>
 </body>
 </html>
+

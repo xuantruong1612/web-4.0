@@ -1,52 +1,54 @@
-<!doctype html>
-<html lang="vi">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Trang chủ — My Accessible Site</title>
-<link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Photography Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<a class="skip-link" href="#main">Bỏ qua tới nội dung chính</a>
+    <a href="#main" class="skip-link">Skip to Main Content</a>
+    
+    <header>
+        <h1>Photography Portfolio</h1>
+    </header>
 
+    <nav>
+        <ul class="nav-list">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
 
-<header class="site-header">
-<div class="brand">
-<a href="index.html">MySite</a>
-</div>
-<nav class="main-nav" aria-label="Primary">
-<ul>
-<li><a href="index.html">Trang chủ</a></li>
-<li><a href="gallery.html">Thư viện</a></li>
-<li><a href="about.html">Giới thiệu</a></li>
-</ul>
-</nav>
-</header>
+    <main id="main">
+        <section class="hero">
+            <h2>Welcome to My Photography World</h2>
+            <p>Capturing moments that tell stories through the lens.</p>
+        </section>
 
+        <section class="featured-grid">
+            <div class="grid-item">
+                <img src="https://picsum.photos/400/300?random=1" alt="Landscape photography of mountains at sunset">
+                <h3>Landscape</h3>
+                <p>Stunning natural vistas</p>
+            </div>
+            <div class="grid-item">
+                <img src="https://picsum.photos/400/300?random=2" alt="Portrait photography in urban setting">
+                <h3>Portrait</h3>
+                <p>Capturing human emotion</p>
+            </div>
+            <div class="grid-item">
+                <img src="https://picsum.photos/400/300?random=3" alt="Wildlife photography of birds in nature">
+                <h3>Wildlife</h3>
+                <p>Nature's beauty preserved</p>
+            </div>
+        </section>
+    </main>
 
-<main id="main">
-<section class="hero">
-<h1>Chào mừng tới trang mẫu truy cập</h1>
-<p>Đây là ví dụ minh họa cho các kỹ thuật CSS: focus skip link, flex, grid, box model, hover, nth-child.</p>
-<img src="images/hero.jpg" alt="Ảnh minh họa trang chủ" class="hero-img">
-</section>
-
-
-<section class="features grid-two">
-<article>
-<h2>Tính năng 1</h2>
-<p>Mô tả ngắn.</p>
-</article>
-<article>
-<h2>Tính năng 2</h2>
-<p>Mô tả ngắn.</p>
-</article>
-</section>
-</main>
-
-
-<footer class="site-footer">
-<p>&copy; 2025 MySite — Thiết kế truy cập</p>
-</footer>
+    <footer>
+        <p>&copy; 2025 Photography Portfolio. All rights reserved.</p>
+    </footer>
 </body>
 </html>
+

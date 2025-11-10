@@ -1,45 +1,42 @@
-<!doctype html>
-<html lang="vi">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Thư viện — My Accessible Site</title>
-<link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Photography Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<a class="skip-link" href="#main">Bỏ qua tới nội dung chính</a>
+    <a href="#main" class="skip-link">Skip to Main Content</a>
+    
+    <header>
+        <h1>Photography Portfolio</h1>
+    </header>
 
+    <nav>
+        <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html" class="active">Gallery</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
 
-<header class="site-header">
-<div class="brand"><a href="index.html">MySite</a></div>
-<nav class="main-nav" aria-label="Primary">
-<ul>
-<li><a href="index.html">Trang chủ</a></li>
-<li><a href="gallery.html">Thư viện</a></li>
-<li><a href="about.html">Giới thiệu</a></li>
-</ul>
-</nav>
-</header>
+    <main id="main">
+        <h2>Photo Gallery</h2>
+        
+        <section class="gallery-flex">
+            <img src="https://picsum.photos/350/250?random=4" alt="Architectural photography of modern building">
+            <img src="https://picsum.photos/350/250?random=5" alt="Street photography capturing daily life">
+            <img src="https://picsum.photos/350/250?random=6" alt="Abstract photography with geometric patterns">
+            <img src="https://picsum.photos/350/250?random=7" alt="Macro photography of flowers and plants">
+            <img src="https://picsum.photos/350/250?random=8" alt="Night photography with city lights">
+            <img src="https://picsum.photos/350/250?random=9" alt="Travel photography from different destinations">
+        </section>
+    </main>
 
-
-<main id="main">
-<h1>Thư viện ảnh</h1>
-<p>Thay mọi đường dẫn ảnh dưới đây bằng ảnh của anh. Trang này có ít nhất 5 ảnh.</p>
-
-
-<section class="gallery grid-gallery">
-<img src="images/photo1.jpg" alt="Mô tả ảnh 1">
-<img src="images/photo2.jpg" alt="Mô tả ảnh 2">
-<img src="images/photo3.jpg" alt="Mô tả ảnh 3">
-<img src="images/photo4.jpg" alt="Mô tả ảnh 4">
-<img src="images/photo5.jpg" alt="Mô tả ảnh 5">
-<!-- thêm ảnh nếu muốn -->
-</section>
-</main>
-
-
-<footer class="site-footer">
-<p>&copy; 2025 MySite</p>
-</footer>
+    <footer>
+        <p>&copy; 2025 Photography Portfolio. All rights reserved.</p>
+    </footer>
 </body>
 </html>
+
