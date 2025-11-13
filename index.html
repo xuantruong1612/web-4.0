@@ -1,54 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Photography Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <a href="#main" class="skip-link">Skip to Main Content</a>
-    
-    <header>
-        <h1>Photography Portfolio</h1>
-    </header>
-
-    <nav>
-        <ul class="nav-list">
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="about.html">About</a></li>
-        </ul>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Portfolio</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button id="darkModeToggle">🌙</button></li>
+      </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </nav>
+  </header>
 
-    <main id="main">
-        <section class="hero">
-            <h2>Welcome to My Photography World</h2>
-            <p>Capturing moments that tell stories through the lens.</p>
-        </section>
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <h1>Welcome to My Portfolio</h1>
+    <p>Check out my projects and web designs.</p>
+  </section>
 
-        <section class="featured-grid">
-            <div class="grid-item">
-                <img src="https://picsum.photos/400/300?random=1" alt="Landscape photography of mountains at sunset">
-                <h3>Landscape</h3>
-                <p>Stunning natural vistas</p>
-            </div>
-            <div class="grid-item">
-                <img src="https://picsum.photos/400/300?random=2" alt="Portrait photography in urban setting">
-                <h3>Portrait</h3>
-                <p>Capturing human emotion</p>
-            </div>
-            <div class="grid-item">
-                <img src="https://picsum.photos/400/300?random=3" alt="Wildlife photography of birds in nature">
-                <h3>Wildlife</h3>
-                <p>Nature's beauty preserved</p>
-            </div>
-        </section>
-    </main>
+  <!-- Projects Section -->
+  <section id="projects" class="container">
+    <div class="card">
+      <h2>Project 1</h2>
+      <p>Description of project 1.</p>
+    </div>
+    <div class="card">
+      <h2>Project 2</h2>
+      <p>Description of project 2.</p>
+    </div>
+    <div class="card">
+      <h2>Project 3</h2>
+      <p>Description of project 3.</p>
+    </div>
+  </section>
 
-    <footer>
-        <p>&copy; 2025 Photography Portfolio. All rights reserved.</p>
-    </footer>
+  <!-- Contact Form -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <p id="formMsg"></p>
+  </section>
+
+  <script src="script.js"></script>
 </body>
 </html>
 
