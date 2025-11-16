@@ -1,65 +1,54 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Navbar -->
-  <header>
-    <nav class="navbar">
-      <div class="logo">Portfolio</div>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><button id="darkModeToggle">🌙</button></li>
-      </ul>
-      <div class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </nav>
-  </header>
 
-  <!-- Hero Section -->
-  <section id="home" class="hero">
-    <h1>Welcome to My Portfolio</h1>
-    <p>Check out my projects and web designs.</p>
-  </section>
+    <header class="header">
+        <a class="skip-link" href="#main">Skip to Main Content</a>
+        <h1>My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <!-- Projects Section -->
-  <section id="projects" class="container">
-    <div class="card">
-      <h2>Project 1</h2>
-      <p>Description of project 1.</p>
-    </div>
-    <div class="card">
-      <h2>Project 2</h2>
-      <p>Description of project 2.</p>
-    </div>
-    <div class="card">
-      <h2>Project 3</h2>
-      <p>Description of project 3.</p>
-    </div>
-  </section>
+    <main id="main">
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <p>
+                Hello! I am a web developer passionate about building responsive,
+                modern and accessible websites.
+            </p>
+        </section>
 
-  <!-- Contact Form -->
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <form id="contactForm">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" placeholder="Your Message" required></textarea>
-      <button type="submit">Send</button>
-    </form>
-    <p id="formMsg"></p>
-  </section>
+        <section id="projects" class="section grid-2">
+            <div>
+                <h2>Projects</h2>
+                <p>Here are some demo projects made with HTML, CSS, and JS.</p>
+            </div>
+            <img src="https://picsum.photos/400" alt="Project demo image" />
+        </section>
 
-  <script src="script.js"></script>
+        <section id="contact" class="section">
+            <h2>Contact</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Your name" required />
+                <input type="email" placeholder="Your email" required />
+                <textarea placeholder="Message" required></textarea>
+                <button>Send</button>
+            </form>
+        </section>
+    </main>
+
 </body>
 </html>
 
